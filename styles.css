@@ -3,8 +3,10 @@ html {
 }
 
 body {
+    height: 100%;
     background-color: #fffbfb;
-    background-size: cover;
+    scroll-behavior: auto;
+    /*background-size: cover;
     background-position: center;
     /*background-image: url(/Images/outdoors.jpg);
     background-size: cover;
@@ -20,7 +22,7 @@ body {
     margin-right: auto;       
 }
 
-header {
+.header {
     /*height: 118px;
     text-align: center;
     background-color: salmon;
@@ -33,19 +35,16 @@ header {
     min-height: auto;
     grid-template-rows: 1fr;
     grid-template-columns: 100%;
-
-
 }
 
-nav {
+.nav {
     background-color: rgba(0, 0, 0, 0.60);
     padding-top: 14px;
     padding-bottom: 14px;
     text-align: center;
-    
 }
 
-main {
+.main {
     height: 400px;
     text-align: center;
     padding-top: 20px;
@@ -54,12 +53,12 @@ main {
     /*background-color: rgba(0, 255, 128, 0.11);*/    
 }
 
-main > div {
+.main > div {
     background: #ddd;
     padding: 1em;
 }
 
-main > div:nth-child(odd) {
+.main > div:nth-child(odd) {
     background: #eee;
 }
 
@@ -71,7 +70,6 @@ main > div:nth-child(odd) {
     padding-top: 50px;
     padding-bottom: 50px;
     border: 2px solid yellow;
-
 }
 */
 
@@ -81,7 +79,13 @@ main > div:nth-child(odd) {
     grid-gap: 1em;
 }
 
-footer {
+.page {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+.footer {
     padding-top: 50px;
     padding-bottom: 50px; 
     background-color: rgba(248, 3, 3, 0.1);    
