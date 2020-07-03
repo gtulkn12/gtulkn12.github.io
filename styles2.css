@@ -27,15 +27,18 @@
 .grid {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: 1fr 650px 650px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-template-areas: 
-    ". header header ."
-    ". left_intro right_intro ."
-    ". about_me about_me ."
-    ". photos photos ."
-    ". videos videos ."
-    ". contact_me contact_me .";
+    "header header"
+    "left_intro right_intro"
+    "left_intro right_intro"
+    "left_intro right_intro"
+    "left_intro right_intro"  
+    "about_me about_me"
+    "photos photos"
+    "videos videos"
+    "contact_me contact_me";
 }
 
 .grid > div {
@@ -52,8 +55,18 @@
     grid-area: header;
 }
 
-.grid > .left_intro {
+.left_intro {
     grid-area: left_intro;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.left_intro > div {
+    background: #ddd;
+    padding: 0px;
+    border: 1px solid;
 }
 
 .grid > .right_intro {
@@ -74,4 +87,28 @@
 
 .grid > .contact_me {
     grid-area: contact_me;
+}
+
+#nav {
+    background-color: rgba(0, 0, 0, 0.60);
+    padding-right: 0 30px;
+    border-left: 1px solid transparent;
+    text-align: left; 
+    line-height: 42px;   
+}
+
+@media screen and (min-width: 900px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 650px 650px 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". header header ."
+        ". left_intro right_intro ."
+        ". about_me about_me ."
+        ". photos photos ."
+        ". videos videos ."
+        ". contact_me contact_me .";
+    }
 }
