@@ -1,11 +1,11 @@
 html {
-    height: 100vw;
-    width: 100vh;
-    color: red;
+    height: 100%;
 }
 
 body {
-    background-color: #000000;
+    background-color: #fffbfb;
+    background-size: cover;
+    background-position: center;
     /*background-image: url(/Images/outdoors.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,14 +17,22 @@ body {
     /*width: 100vw;*/
     max-width: 1024px;
     margin-left: auto;
-    margin-right: auto;
-       
+    margin-right: auto;       
 }
 
 header {
-    height: 118px;
+    /*height: 118px;
     text-align: center;
     background-color: salmon;
+*/
+    text-align: center;    
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
 
 
 }
@@ -40,13 +48,23 @@ nav {
 main {
     height: 400px;
     text-align: center;
-    padding-top: 80px;
-    padding-left: 240px;
-    padding-right: 240px;
-    background-color: rgba(0, 255, 128, 0.11);    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    /*background-color: rgba(0, 255, 128, 0.11);*/    
 }
 
-.page {
+main > div {
+    background: #ddd;
+    padding: 1em;
+}
+
+main > div:nth-child(odd) {
+    background: #eee;
+}
+
+/*.page {
+    
     height: 118px;
     text-align: center;
     background-color: salmon;
@@ -54,6 +72,13 @@ main {
     padding-bottom: 50px;
     border: 2px solid yellow;
 
+}
+*/
+
+.split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
 }
 
 footer {
