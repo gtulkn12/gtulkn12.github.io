@@ -148,7 +148,7 @@ body {
 /* Intro Section - INTRO RIGHT */
 #intro-right {
     grid-area: intro-right;
-    background-image: url(/Images/Malik-90.jpg);
+    background-image: url(Images/Malik-90.jpg);
     max-height: 100%;
     background-attachment: fixed;
     background-size: contain;
@@ -181,14 +181,13 @@ body {
 }
 
 #about-me-bottom {
-    background-image: url(/Images/FamilyAtFence.jpg);
+    background-image: url(Images/FamilyAtFence.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 1rem;
     text-align: left;
 }
-
 
 .about-me p {
     font-size: 1rem;
@@ -286,7 +285,7 @@ body {
 /* Contact Section - CONTACT RIGHT */
 #contact-right {
     grid-area: contact-right;
-    background-image: url(/Images/MalikMalikSitting.jpg);
+    background-image: url(Images/MalikMalikSitting.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
