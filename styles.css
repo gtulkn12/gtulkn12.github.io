@@ -35,7 +35,6 @@ body {
 }
 
 /* WRAPPER */
-
 .wrapper {
     display: grid;
     grid-gap: 20px;
@@ -159,20 +158,6 @@ body {
     padding: 1rem;
 }
 
-.parallax {
-    /* The image used */
-    background-image: url("img_parallax.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
 /* ABOUT ME */
 .about-me {
     display: grid;
@@ -284,7 +269,6 @@ body {
     margin-bottom: 0px;
     color: var(--name);
 }
-
 
 #contact-left-bottom p {
     font-size: 2.5rem;    
