@@ -41,6 +41,17 @@ body {
 }
 
 /* HEADER SECTION */
+.header {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-gap: 20px;
+    overflow: hidden;
+    background-color: #015761;;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .header ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
