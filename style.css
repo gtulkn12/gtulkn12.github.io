@@ -312,6 +312,10 @@ footer {
     padding: 1rem;
 }
 
-/* @media (max-width: 700px) {
-    
-} */
+@media (max-width: 500px) {
+    .intro-container {
+        grid-template-areas:
+        "intro-left intro-left"
+        "intro-right intro-right";
+    }
+}
