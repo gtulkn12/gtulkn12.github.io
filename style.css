@@ -191,6 +191,11 @@ body {
     color: #015761;
 }
 
+#about-me-nav {
+    display: flexbox;
+    text-align: left;
+}
+
 #about-me-bottom {
     background-image: url(Images/FamilyAtFence.jpg);
     background-size: cover;
